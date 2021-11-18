@@ -1,0 +1,10 @@
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > ul > li {
+  margin-right: 30px;
+}
