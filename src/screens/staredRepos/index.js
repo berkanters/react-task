@@ -5,8 +5,8 @@ import axios from "axios";
 import logo from "../../assets/unname2d.jpg";
 import { Button } from "react-bootstrap";
 import background from "../../assets/back.jpeg";
-import star from "../../assets/star.png"
-import star2 from "../../assets/star2.png"
+import star from "../../assets/star3.png"
+import star2 from "../../assets/star4.png"
 const HomeScreen = () => {
 
   const [item, setItem] = useState();
