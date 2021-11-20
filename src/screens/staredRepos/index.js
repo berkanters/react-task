@@ -15,6 +15,7 @@ const HomeScreen = () => {
   useEffect(() => {
     //fetch("https://api.github.com/users/berkanters").then(response => response.json()).then(response => setItem(response));
     //fetch("https://api.github.com/users/berkanters/repos").then(response => response.json()).then(response => setRepos(response));
+    //fetch("https://api.github.com/users/octocat/starred{/owner}{/repo}").then(response => response.json()).then(response => console.log())
     axios
       .get("https://api.github.com/users/berkanters").then(res => setItem(res.data));
     axios
@@ -27,13 +28,13 @@ const HomeScreen = () => {
         <div className="headerTop"><h1>Profile Information</h1></div>
         <div className="d-flex div2">
         <div className="">
-          <img src={logo} style={{ width: 140 }} />
-          <p className="header">Name: <p className="title">{item.name}</p></p>
+          <p className="header">Avatar Url: <img src={item.avatar_url} style={{width:"140px",borderRadius: 200}}/></p>
+
         </div>
         <div>
+          <p className="header">Name: <p className="title">{item.name}</p></p>
           <p className="header">Company:<p className="title"> {item.company}</p></p>
           <p className="header">Location:<p className="title"> {item.location}</p></p>
-          <p className="header">Avatar Url:<p className="title"> {item.avatar_url}</p></p>
         </div>
         <div>
           <p className="header">Public Repos: <p className="title">{item.public_repos}</p></p>
