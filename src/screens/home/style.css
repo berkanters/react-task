@@ -9,7 +9,7 @@ background-color: wheat;
 position: absolute;
     z-index: -1;
     width: 100%;
-    height: 150%;
+    height: 300%;
     left:0
 
 }
@@ -49,9 +49,17 @@ justify-content: space-around;
 .button {
     background-color: wheat;
     height: 45px;
+
 }
 .divFav{
 
     margin-bottom: 10px ;
     justify-content: right;
+}
+
+.header2{
+    font-size: 30px;
+    color: black;
+
+
 }

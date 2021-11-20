@@ -6,7 +6,7 @@ import { HomeScreen, StaredReposScreen } from "./screens";
 const App = () => {
   return (
     <Router>
-      <StaredReposScreen />
+      <StaredReposScreen  />
     </Router>
   );
 };

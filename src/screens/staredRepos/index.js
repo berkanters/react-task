@@ -7,15 +7,16 @@ import { Button } from "react-bootstrap";
 import background from "../../assets/back.jpeg";
 import star from "../../assets/star3.png"
 import star2 from "../../assets/star4.png"
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 const HomeScreen = () => {
 
   const [item, setItem] = useState();
   const [repos, setRepos] = useState();
   const [picture, setPicture] = useState(false);
+  const [fav, setFav] = useState();
   useEffect(() => {
-    //fetch("https://api.github.com/users/berkanters").then(response => response.json()).then(response => setItem(response));
-    //fetch("https://api.github.com/users/berkanters/repos").then(response => response.json()).then(response => setRepos(response));
-    //fetch("https://api.github.com/users/octocat/starred{/owner}{/repo}").then(response => response.json()).then(response => console.log())
+
     axios
       .get("https://api.github.com/users/berkanters").then(res => setItem(res.data));
     axios
@@ -43,10 +44,20 @@ const HomeScreen = () => {
         </div>
         </div>
       </div>}
-      <div className="d-flex reposDiv">
+      <div className=" reposDiv">
         {repos && repos.map(data => {
 
-          return <div className="inRepos">
+          return <VerticalTimeline>
+            <VerticalTimelineElement
+              animate={true}
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "rgba(255, 0, 0, 0)", color: "#fff" }}
+              contentArrowStyle={{ borderRight: "14px solid  rgb(255,255,255)" }}
+              date={data.created_at}
+              iconStyle={{ background: "rgba(255, 0, 0, 0)", color: "#fff" }}
+
+            >
+          <div className="inRepos">
             <div className="d-flex divFav">
             {picture ? <div  onClick={
               () => setPicture(false)
@@ -59,15 +70,18 @@ const HomeScreen = () => {
 
             <p className="header">Repo Language:<p className="title"> {data.language === null ? 'Undefined' : data.language}</p></p>
             <p className="header">Favorite:<p className="title"> {data.stargazers_count}</p></p>
-            <Button className="button" onClick={() => {
+            <Button className=" button" onClick={() => {
               window.open(data.html_url);
             }}>
-              <p className="header">Repo Url</p>
+              <p className="header2">REPO URL</p>
             </Button>
           </div>;
+            </VerticalTimelineElement>
+
+          </VerticalTimeline>;
+
 
         })}
-
       </div>
     </div>
   );
