@@ -6,7 +6,19 @@ import { HomeScreen, StaredReposScreen } from "./screens";
 const App = () => {
   return (
     <Router>
-      <StaredReposScreen  />
+      <div>
+        <NavBar />
+
+        <Switch>
+          <Route exact path={`${STARED_REPOS_SCREEN}`}>
+            <StaredReposScreen />
+          </Route>
+
+          <Route exact path={`${HOME_SCREEN}`}>
+            <HomeScreen />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 };
