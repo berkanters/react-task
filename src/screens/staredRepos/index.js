@@ -21,6 +21,7 @@ const HomeScreen = () => {
       .get("https://api.github.com/users/berkanters").then(res => setItem(res.data));
     axios
       .get("https://api.github.com/users/berkanters/repos").then(res => setRepos(res.data));
+
   }, []);
   const [query, setQuery] = useState("");
 

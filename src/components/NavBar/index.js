@@ -17,7 +17,7 @@ const HomeScreen = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href={`${HOME_SCREEN}`}>Favorite</Nav.Link>
+              <Nav.Link href={`${HOME_SCREEN}`}>Stared</Nav.Link>
             </Nav>
 
           </Navbar.Collapse>
