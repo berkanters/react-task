@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 import { HOME_SCREEN, STARED_REPOS_SCREEN } from '../../constants/navigations';
 
 import './style.css';
@@ -19,15 +19,7 @@ const HomeScreen = () => {
             >
               <Nav.Link href={`${HOME_SCREEN}`}>Favorite</Nav.Link>
             </Nav>
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
+
           </Navbar.Collapse>
         </Container>
       </Navbar>
