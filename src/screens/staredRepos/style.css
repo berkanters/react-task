@@ -1,1 +1,77 @@
- 
+.mainDiv{
+
+    border-width: 30px;
+
+    background-color: rgba(248,249,250,255);
+
+}
+.background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 300%;
+    left:0
+}
+
+.profil {
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.div2 {
+    justify-content: space-evenly;
+}
+.headerTop {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.header1 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold !important;
+
+}
+.title {
+    font-size: 15px;
+    color: black;
+}
+.reposDiv {
+    justify-content: space-around;
+}
+.inRepos {
+    width: 100%;
+    background-color: rgba(248,249,250,255);
+    padding: 30px;
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+.button {
+    background-color: rgba(248,249,250,255);
+    align-items: center !important;
+    margin-bottom: 20px;
+}
+.divFav{
+
+    margin-bottom: 10px ;
+    justify-content: right;
+}
+
+.header2{
+
+    color: black;
+
+
+}
+.inputSearch {
+justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+.inputSearch2 {
+    padding: 10px;
+    outline: none;
+}

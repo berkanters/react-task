@@ -1,65 +1,40 @@
-.mainDiv{
-
-    border-width: 30px;
-    border-radius: 40px;
-background-color: wheat;
-
+.stared {
+    border-radius: 20px;
+    border-color: black;
+    border: solid;
+    margin-top: 20px;
+border-color: brown;
+    width: 250px;
 }
-.background {
-position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 300%;
-    left:0
-
-}
-
-.profil {
-justify-content: space-around;
-margin-bottom: 50px;
-
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-.div2 {
-justify-content: space-evenly;
-}
-.headerTop {
-    text-align: center;
-    margin-bottom: 40px;
-}
-.header {
-    font-size: 20px;
-    color: black;
-}
-.title {
-    font-size: 15px;
-    color: black;
-}
-.reposDiv {
-justify-content: space-around;
-}
-.inRepos {
-    width: 100%;
-    background-color: wheat;
+.staredItem {
     padding: 30px;
+}
+.staredCont {
+    text-align: center;
+    align-items: center;
+}
+.contTravolta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.starredStyle{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(248,249,250,255);
     border-radius: 20px;
     margin-right: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-.button {
-    background-color: wheat;
-    height: 45px;
-
+.background2 {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 300%;
+    left: 0
 }
-.divFav{
-
-    margin-bottom: 10px ;
-    justify-content: right;
-}
-
-.header2{
-    font-size: 30px;
-    color: black;
+.styleBorder{
 
 
 }
