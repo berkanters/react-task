@@ -19,3 +19,22 @@ border-color: brown;
     align-items: center;
     text-align: center;
 }
+.starredStyle{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(248,249,250,255);
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.background2 {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 300%;
+    left: 0
+}
+.styleBorder{
+
+
+}
